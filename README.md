@@ -3,11 +3,15 @@
 
 The goal of this project is to build a web application that runs the game "Kalaha", with all the game rules implemented on the back-end in Java.
 
-<img src="https://i.ibb.co/gDW4wwF/screenshot.png" data-canonical-src="https://i.ibb.co/gDW4wwF/screenshot.png" width="600" />
+<img src="https://i.ibb.co/gDW4wwF/screenshot.png" data-canonical-src="https://i.ibb.co/gDW4wwF/screenshot.png" width="100%" />
+Screenshot of the game
 
 ## Built With
 * [Java 15](https://www.oracle.com/java/technologies/javase-downloads.html)
+* [Junit](https://junit.org/junit5/)
 * [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring Data JPA](https://spring.io/projects/spring-data-jpa)
+* [H2 Database](https://www.h2database.com/html/main.html)
 * [Rest](https://restfulapi.net/)
 * [Vanilla Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
@@ -22,7 +26,7 @@ The goal of this project is to build a web application that runs the game "Kalah
 
 1. Clone the git project to your local repository with:
 ```sh
- clone https://gitlab.com/bolcom/guilherme-silveira
+ git clone https://gitlab.com/bolcom/guilherme-silveira
 ```
 
 ## Usage
@@ -39,17 +43,20 @@ The goal of this project is to build a web application that runs the game "Kalah
    ```sh
    http://localhost:8080
    ```
-4. CLick on `New Game`
+4. Click on `New Game`
 
 ## Architecture
 
-* The `config` package contains the HTTP Security configuration.
+This project follows the MVC architecture. The package structure is organised as follows:
+
 * The `controller` package contains classes that handle HTTP requests.
 * The `model` package contains the entity classes.
-* The `form` and `dto` packages contain the classes used to map request parameters.
-* The `repository` package contains the repository interfaces that provide CRUD functionality to the entity classes.
-* The `security` package contains the classes responsible for user authentication.
 * The `service` package identifies the application layer that encapsulates the business logic, controls transactions, etc.
+* The `repository` package contains the repository interfaces that provide CRUD functionality to the entity classes.
+* The `game` package contains the game logic implementation.
+* The `form` and `dto` packages contain the classes used to map request parameters.
+* The `config` package contains the HTTP Security configuration.
+* The `security` package contains the classes responsible for user authentication.
 
 ## Contact
 
