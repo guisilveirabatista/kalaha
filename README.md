@@ -3,7 +3,7 @@
 
 The goal of this project is to build a web application that runs the game "Kalaha", with all the game rules implemented on the back-end in Java.
 
-<img src="https://imgur.com/c6M6NPb" data-canonical-src="https://imgur.com/c6M6NPb" width="600" />
+<img src="https://i.ibb.co/gDW4wwF/screenshot.png" data-canonical-src="https://i.ibb.co/gDW4wwF/screenshot.png" width="600" />
 
 ## Built With
 * [Java 15](https://www.oracle.com/java/technologies/javase-downloads.html)
