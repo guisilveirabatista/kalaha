@@ -1,7 +1,7 @@
 # About The Project
 [Kalaha Board Game](https://en.wikipedia.org/wiki/Kalah)
 
-The goal of this project is to build a web application that runs the game "Kalaha", with all the game rules implemented on the back-end in Java.
+The goal of this project is to build a web application that runs the game "Kalaha", with all the game rules implemented and processed on the back-end in Java.
 
 <img src="https://i.ibb.co/gDW4wwF/screenshot.png" data-canonical-src="https://i.ibb.co/gDW4wwF/screenshot.png" width="100%" />
 Screenshot of the game
