@@ -1,35 +1,58 @@
-Building a web application that runs the game Kalaha.
+# About The Project
+[Kalaha Board Game](https://en.wikipedia.org/wiki/Kalah)
 
-Author: Guilherme Silveira Batista
+The goal of this project is to build a web application that runs the game "Kalaha", with all the game rules implemented on the back-end in Java.
 
-This project was created following the REST architecture.
+<img src="https://imgur.com/c6M6NPb" data-canonical-src="https://imgur.com/c6M6NPb" width="600" />
 
-#Tools used for this project:
+## Built With
+* [Java 15](https://www.oracle.com/java/technologies/javase-downloads.html)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Rest](https://restfulapi.net/)
+* [Vanilla Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
--JAVA 8 for the back-end;
+## Prerequisites
 
--AngularJS for the front-end;
+* Java 15
+* Maven (Optional)
 
--Bootstrap for the front-end;
+## Installation
 
--RESTful Web Services in Java (Jersey implementation of JAX-RS API);
+1. Clone the git project to your local repository with:
+```sh
+ clone https://gitlab.com/bolcom/guilherme-silveira
+```
 
--Jetty Server;
+## Usage
 
--JUnit 5 for the tests.
+1. In the root folder of the project, run the command:
+   ```sh
+   mvn spring-boot:run
+   ```
+2. Alternatively, you can run the project by executing the class found in:
+   ```sh
+   root/src/main/java/nl/guilhermesilveira/kalaha/Application.java
+   ```
+3. Open following link on your browser:
+   ```sh
+   http://localhost:8080
+   ```
+4. CLick on `New Game`
 
-#Usage:
+## Architecture
 
-In order to run the application, execute the following maven command inside the project's directory.
+* The `config` package contains the HTTP Security configuration.
+* The `controller` package contains classes that handle HTTP requests.
+* The `model` package contains the entity classes.
+* The `form` and `dto` packages contain the classes used to map request parameters.
+* The `repository` package contains the repository interfaces that provide CRUD functionality to the entity classes.
+* The `security` package contains the classes responsible for user authentication.
+* The `service` package identifies the application layer that encapsulates the business logic, controls transactions, etc.
 
-$ mvn jetty:run
+## Contact
 
-Access the deployed webapp at the following link:
+Guilherme Silveira - guisilveirabatista@gmail.com
 
-http://localhost:8080/kalaha.html
-
-Screenshot of the gameplay:
-
-https://imgur.com/a/6P2uQlH
-
-
+Project Link: [https://gitlab.com/bolcom/guilherme-silveira](https://github.com/your_username/repo_name)
